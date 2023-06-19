@@ -1,0 +1,221 @@
+:root {
+    /*mudando as caracteristicas de todo o documento*/
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+html,
+body,
+div,
+header,
+main,
+footer,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li,
+ol {
+    /*reset apenas nos elementos nescessários professor Romeu lançou a braba*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /*conseguir o .img do site da netflix foi fácil, dificil foi escurecer kkkk ChatGPT salvou*/
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%),
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/36ddf343-62a3-41a5-8da6-7745fc668cac/BR-pt-20230612-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#page-container {
+    /*transformando a página em uma flex*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    /*deixando o cabeçalho alinhado e mudando o select e o button para a direita*/
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+
+button[type="submit"] {
+    /*tentando deixar o button um pouco mais bonito*/
+    background-color: rgba(255, 0, 0, 0.836);
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border-color: transparent;
+}
+
+
+select {
+    /*continuo tentando deixar bonito*/
+    padding: 8px;
+    border-radius: 5px;
+    border-color: grey;
+    background-color: transparent;
+    color: white;
+}
+
+select option {
+    background-color: black;
+}
+
+
+input[type="text"] {
+    /*ta quadradão mas já ta bem melhor*/
+    padding: 8px;
+    border-radius: 5px;
+    border-color: rgba(128, 128, 128, 0.432);
+    width: 450px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    font-size: 0.9rem;
+}
+
+
+header,
+main,
+footer {
+    /*espaçando os conteúdos da página*/
+    padding: 6px;
+}
+
+
+.logo-text {
+    /*transformando o texto do cabeçalho*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+main {
+    /*transformando os elementos da main em flex, alinhando e espaçando*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+
+#text-container {
+    /*flex para ajeitar os textos do começo*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+#search-container {
+    /*input e button de busca **testar o wrap para não ficar feio quando a página diminui*/
+    display: flex;
+    align-items: center;
+    padding: 42px;
+    gap: 8px;
+}
+
+
+main>div {
+    /*dando espaço entre as div's, porém ainda precisa melhorar*/
+    padding: 20px;
+    gap: 10px;
+}
+
+
+#devices-container {
+    /*amanhã termino a parte dos devices*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+#devices-container img {
+    /* separando a imagem do texto*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    max-width: 70%;
+}
+
+#benefits-container {
+    /* criado uma nova flex para adicionar a última imagem e as vantagens*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+#benefits-container img {
+    /*diminuindo o tamanho da imagem e centralizando*/
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#benefits-container h2 {
+    padding: 35px;
+    font-size: 2.5rem;
+}
+
+#benefits-container p {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+footer {
+    color: white;
+    background-color: #000000;
+    display: flex;
+    padding: 16px;
+}
+
+footer nav {
+    display: flex;
+    column-gap: 16px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 0.6rem;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
